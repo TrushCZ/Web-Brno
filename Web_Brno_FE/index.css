@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #3A3A3A; 
+}
+
+/* GENERALY USED */
+.categoryBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 11vw;
+}
+
+.categoryBox button {
+  padding: 0.3vw;
+  margin-left: 0.4vw;
+  width: 5vw;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.6vw;
+  color: white;
+  background: #aaa9a9
+}
+
+.btnNext {
+  position:absolute;
+  right: -0.5vw;
+}
+
+.btnNext img{
+  width: 5vw;
+}
+
+.btnNext_gastronomy {
+  top: 343vh;
+}
+
+.btnNext_inspiration {
+  top: 208vh;
+}
+
+.btnNext_freeTime {
+  top: 261vh;
+}
+
+/* HEADER */
+
+header {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  color: white;
+  background: #3A3A3A;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__logo__word {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.header__logo__heart {
+  width: 0.6vw;
+  margin-left: 0.3vw;
+  margin-bottom: 0.6vw;
+}
+
+.header__navigation,
+.header__buttonBox {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+}
+
+.header__navigation a,
+.header__buttonBox a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 2vw;
+}
+
+.header__navigation a:hover,
+.header__buttonBox a:hover {
+  cursor: pointer;
+  text-decoration: underline; 
+}
+
+/* MAIN - advertisement */
+main {
+  z-index: 0;
+  margin-top: 8vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/brno\ new.jpg');
+  background-attachment: fixed;
+  background-position: center right;
+  background-size:cover;
+  height: 453.5vh;
+}
+
+main h3 {
+  z-index: 2;
+  position: fixed;
+  left: 48vw;
+  top: 37vh;
+  padding-left: 1vw;
+  width: 34%;
+  font-weight: 500;
+  font-size: 1.8vw;
+  word-spacing: 0.3vw;
+  color: white;
+  background: #DA2128;
+}
+
+/* CONTAINER */
+.container {
+  z-index: 3;
+  position: relative;
+  top: 53vh;
+  margin: auto;
+  width: 66vw;
+  background-color: whitesmoke;
+}
+
+.container_greyBackground {
+  background: #f2efec;
+}
+
+/* THE NEWEST ARTICLES - big one */
+.newestArticles_big {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: auto;
+  width: 60vw;
+  height: 48vh;
+}
+
+.newestArticles_big_img {
+  width: 60%;
+  height: 90%;
+  background-size: cover;
+}
+
+.newestArticles_big_textPart {
+  width: 38%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.newestArticles_big_textPart h2 {
+  font-size: 2.2vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128;
+}
+
+.newestArticles_big_textPart h2:hover {
+  transition: underline 0.7s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.newestArticles_big_textPart p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-size: 1vw ;
+  word-spacing: 0.3vw;
+}
+
+/* THE NEWEST ARTICLES-smaller one */
+.newestArticles_smallBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 4vh 3vw 0 3vw;
+  padding-bottom: 4vh;
+  width: 60vw;
+  height:38vh;
+  border-top: 0.2px dotted rgb(184, 183, 183)
+}
+
+.newestArticles_smallBox_first, 
+.newestArticles_smallBox_second,
+.newestArticles_smallBox_third,
+.newestArticles_smallBox_forth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  height: 90%;
+}
+
+.newestArticles_smallBox_img {
+  width: 100%;
+  height: 50%;
+}
+
+
+.newestArticles_smallBox h5 {
+  margin: 0 0.5vw 0 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128
+}
+
+.newestArticles_smallBox h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* INTERESTING ARTICLES */
+
+.titleInteresting {
+  display: flex;
+  align-items: center;
+  margin: 5vh 0 6vh 3vw;
+  width: 60vw;
+  height: 3vh;
+}
+
+.titleInteresting h2 {
+  padding: 1vh 0 1vh 1vw;
+  width: 40%;
+  font-size: 1.8vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color: white;
+  background-color: #DA2128;
+}
+
+.interesting_upperBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 4vh 3vw 0 3vw;
+  width: 60vw; 
+  height: 35vh;
+}
+
+.interesting_upperBox_left {
+  display: flex;
+  justify-content: space-between;
+  width: 65.5%;
+  height: 100%;
+}
+
+.interesting_upperBox_left_img {
+  width: 68%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/vystaviště.jpeg');
+  background-size: cover;
+}
+
+.interesting_upperBox_left_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32%;
+}
+
+.interesting_upperBox_left_text h2 {
+  margin: 0 0.5vw 0 0.5vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128;
+}
+
+.interesting_upperBox_left_text h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.interesting_upperBox_left_text p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-size: 0.9vw ;
+  word-spacing: 0.3vw;
+}
+
+.interesting_upperBox_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31%;
+  height: 100%;
+}
+
+.interesting_upperBox_right_img {
+  width: 100%;
+  height: 65%;
+  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/hvezdarna.jpeg');
+  background-size: cover;
+}
+
+.interesting_upperBox_right_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 35%;
+}
+
+.interesting_upperBox_right h5 {
+  padding-top: 1vh;
+  margin: 0 0.5vw 0 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128
+}
+
+.interesting_upperBox_right h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.interesting_lowerBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 4vh 3vw 0 3vw;
+  width: 60vw;
+  height: 35vh;
+}
+
+.interesting_lowerBox1, 
+.interesting_lowerBox2, 
+.interesting_lowerBox3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31%;
+  height: 100%;
+}
+
+.interesting_lowerBox_img {
+  width: 100%;
+  height: 65%;
+}
+
+.interesting_lowerBox1_img {
+  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/čerti\ vystava.jpeg');
+  background-size: cover;
+}
+
+.interesting_lowerBox2_img {
+  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/čerti_polivka.jpeg');
+  background-size: cover;
+}
+
+.interesting_lowerBox3_img {
+  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/nebal.jpeg');
+  background-size: cover;
+}
+
+.interesting_lowerBox_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 35%;
+}
+
+.interesting_lowerBox_text h5 {
+  margin: 0 0.5vw 0 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128
+}
+
+.interesting_lowerBox_text h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* INSPIRACE */
+
+.titleInspiration {
+  display: flex;
+  align-items: center;
+  margin: 0 0 4vh 3vw;
+  width: 60vw;
+  border-top: 0.2px dotted rgb(184, 183, 183);
+}
+
+.titleInspiration h2 {
+  padding: 1vh 0 1vh 1vw;
+  margin-top:4vh;
+  width: 40%;
+  font-size: 1.8vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color: white;
+  background-color: #DA2128;
+}
+
+.inspirationContainer_greyBackground {
+  width: 100%;
+  height: 40vh;
+  background-color: #f2efec;
+}
+
+.inspirationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 60vw;
+  height: 100%;
+}
+
+.inspirationBox {
+  width: 24%;
+  height: 87%;
+  background-color: white;
+}
+
+.inspirationBox_img {
+  width: 100%;
+  height: 50%;
+}
+
+.inspirationBox_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+
+}
+
+.inspirationBox h5 {
+  margin: 0 0.5vw 0 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128
+}
+
+.inspirationBox h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* FREE TIME */
+
+.freetimeContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  height: 35vh;
+  margin: auto;
+}
+
+.freetimeBox {
+  width: 32.5%;
+  height: 100%;
+  background: #f2efec;
+}
+
+.freetimeBox_img {
+  width: 100%;
+  height: 55%;
+}
+
+.freetimeBox_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 45%;
+}
+
+.freetimeBox_text h5 {
+  margin: 0 0.5vw 0 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128;
+}
+
+.freetimeBox_text h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+} 
+
+/* MOST READED */
+
+.mostReadedTitle {
+  margin: 4vh 0 0 3vw;
+  width: 60vw;
+  border-top: 0.2px dotted rgb(184, 183, 183)
+  /* border-left: 5px solid #DA2128 */
+}
+
+.mostReadedTitle h2 {
+  padding: 3vh 0 1vh 0;
+  font-size: 1.8vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color: #DA2128;
+}
+
+.mostReaded_container {
+  display: flex;
+  margin: 1vh 3vw 0 3vw;
+  width: 60vw;
+  height: 20vh;
+}
+
+.mostReaded_box {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  border-bottom: 0.2px dotted rgb(184, 183, 183)
+}
+
+.mostReaded_box h1 {
+  font-size: 3vw;
+  color: #DA2128;
+}
+
+.mostReaded_box p {
+  margin: 1vh 0.3vw 0 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.mostReaded_box p:hover {
+  transition: color 0.6s;
+  cursor: pointer;
+  color: #DA2128;
+}
+
+/* GASTRONOMIE */
+
+.titleGastronomy {
+  display: flex;
+  align-items: center;
+  margin: 0 0 4vh 3vw;
+  width: 60vw;
+}
+
+.titleGastronomy h2 {
+  padding: 1vh 0 1vh 1vw;
+  margin-top: 3vh;
+  width: 40%;
+  font-size: 1.8vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color: white;
+  background-color: #DA2128;
+}
+
+.gastronomyContainer_greyBackground {
+  width: 100%;
+  height: 40vh;
+  background-color: #f2efec;
+}
+
+.gastronomyContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 60vw;
+  height: 100%;
+}
+
+.gastronomyBox {
+  width: 24%;
+  height: 87%;
+  background-color: white;
+}
+
+.gastronomyBox_img {
+  width: 100%;
+  height: 50%;
+}
+
+.gastronomyBox_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+
+.gastronomyBox h5 {
+  margin: 0 0.5vw 0 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128
+}
+
+.gastronomyBox h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.greySpace {
+  width: 66vw;
+  height:5vh;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background: #3A3A3A
+}
+
+.iconBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25vw;
+}
+
+.iconBox img {
+  width: 3vw;
+}
+
+.iconBox img:nth-child(2) {
+  width: 3.2vw;
+}
+
+.iconBox img:nth-child(3) {
+  width: 2.8vw;
+}
+
+.iconBox img:hover {
+  cursor: pointer;
+}
+
+footer p {
+  font-size: 1vw;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
