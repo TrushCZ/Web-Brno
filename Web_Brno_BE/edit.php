@@ -116,6 +116,21 @@ $result_final = mysqli_fetch_assoc($result);
           >Sport</option>
        </select> <br>
 
+       <h2>Zajímavé</h2> 
+       <select name="interesting">
+          <option value="Ano"
+            <?php if ($result_final['Interesting'] == 'Ano') : ?>
+              <?= $selected ?>
+            <?php endif; ?> 
+          >Ano</option>
+
+          <option value="Ne"
+            <?php if ($result_final['Interesting'] == 'Ne') : ?>
+              <?= $selected ?>
+            <?php endif; ?> 
+          >Ne</option>
+       </select> <br>
+
        <!-- Ivisible input - just to send ID to update.php -->
 
        <input type="number" name='invisibleInputID' value='<?=$id?>' style='display:none'>

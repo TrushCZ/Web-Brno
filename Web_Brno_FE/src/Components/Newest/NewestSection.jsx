@@ -24,9 +24,6 @@ const NewestSection = () => {
         loadData()        
     },[])
 
-    console.log(data1);
-    console.log(data2);
-
     return <>
 
 {

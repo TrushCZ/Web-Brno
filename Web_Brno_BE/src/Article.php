@@ -8,6 +8,7 @@ class Article
     public ?string $text = null;
     public ?string $mainImage = null; 
     public ?string $category= null;
+    public ?string $interesting = null;
     public ?string $imgName = null;
     public ?string $imgID = null;
 }

@@ -65,12 +65,13 @@ $article->header = $_POST['header'] ?? $article->header ;
 $article->perex = $_POST['perex'] ?? $article->perex;
 $article->text = $_POST['text'] ?? $article->text;
 $article->category = $_POST['category'] ?? $article->category;
+$article->interesting = $_POST['interesting'] ?? $article->interesting;
 $article->imgName = $_POST['name'];
 $article->imgID = $newImageName;
 
 // Insering data to DB
 
-$query = "INSERT INTO `Články` (Header, Perex, Text, Category, MainImg_Name, MainImg_ID) VALUES('$article->header', '$article->perex', '$article->text', '$article->category','$article->imgName', '$article->imgID')";
+$query = "INSERT INTO `Články` (Header, Perex, Text, Category, Interesting, MainImg_Name, MainImg_ID) VALUES('$article->header', '$article->perex', '$article->text', '$article->category', '$article->interesting', '$article->imgName', '$article->imgID')";
 
 $result = mysqli_query($connection, $query);
 

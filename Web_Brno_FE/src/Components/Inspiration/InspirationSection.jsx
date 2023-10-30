@@ -24,7 +24,6 @@ const InspirationSection = () => {
 return <>
 
 {
-
     !load 
     ? 
     <h3>Loading</h3> 

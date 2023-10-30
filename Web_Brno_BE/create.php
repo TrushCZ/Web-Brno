@@ -71,7 +71,12 @@ if (isset($_SESSION['errors'])) {
           <option value="Inspirace">Inspirace</option>
           <option value="Sport">Sport</option>
        </select> <br>
-
+       <h2>Zajímavé</h2> 
+       <select name="interesting">
+          <option value="Ano">Ano</option>
+          <option value="Ne" selected='selected'>Ne</option>
+       </select> <br>
+       
        <button class='createArticle_Form_btn'type='submit' name='submit'>Ulož</button>
     </form>
 

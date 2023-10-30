@@ -73,12 +73,13 @@ $article->header = $_POST['header'] ?? $article->header ;
 $article->perex = $_POST['perex'] ?? $article->perex;
 $article->text = $_POST['text'] ?? $article->text;
 $article->category = $_POST['category'] ?? $article->category;
+$article->interesting = $_POST['interesting'] ?? $article->interesting;
 $article->imgName = $_POST['name']?? $article->imgName;
 $article->imgID = $newImageName ?? $article->imgID;
 
 // Updating data in DB
 
-$query2 = "UPDATE `Články` SET `Header`= '$article->header',`Perex`='$article->perex', `Text`='$article->text', `Category`= '$article->category', `MainImg_Name`='$article->imgName', `MainImg_ID`='$article->imgID' WHERE `id` = $id";
+$query2 = "UPDATE `Články` SET `Header`= '$article->header',`Perex`='$article->perex', `Text`='$article->text', `Category`= '$article->category', `Interesting` = '$article->interesting', `MainImg_Name`='$article->imgName', `MainImg_ID`='$article->imgID' WHERE `id` = $id";
 
 mysqli_query($connection, $query2);
 

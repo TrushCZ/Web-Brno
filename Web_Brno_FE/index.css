@@ -103,9 +103,9 @@ main {
   z-index: 0;
   margin-top: 8vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/brno\ new.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/Petrov2.jpg');
   background-attachment: fixed;
-  background-position: center right;
+  background-position: center;
   background-size:cover;
   height: 453.5vh;
 }
@@ -213,7 +213,6 @@ main h3 {
   height: 50%;
 }
 
-
 .newestArticles_smallBox h5 {
   margin: 0 0.5vw 0 0.5vw;
   font-size: 1.1vw;
@@ -265,8 +264,6 @@ main h3 {
 .interesting_upperBox_left_img {
   width: 68%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/vystaviště.jpeg');
-  background-size: cover;
 }
 
 .interesting_upperBox_left_text {
@@ -310,8 +307,6 @@ main h3 {
 .interesting_upperBox_right_img {
   width: 100%;
   height: 65%;
-  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/hvezdarna.jpeg');
-  background-size: cover;
 }
 
 .interesting_upperBox_right_text {
@@ -357,21 +352,6 @@ main h3 {
 .interesting_lowerBox_img {
   width: 100%;
   height: 65%;
-}
-
-.interesting_lowerBox1_img {
-  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/čerti\ vystava.jpeg');
-  background-size: cover;
-}
-
-.interesting_lowerBox2_img {
-  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/čerti_polivka.jpeg');
-  background-size: cover;
-}
-
-.interesting_lowerBox3_img {
-  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)),url('src/img_articles/nebal.jpeg');
-  background-size: cover;
 }
 
 .interesting_lowerBox_text {
@@ -506,7 +486,7 @@ main h3 {
   text-decoration: underline;
 } 
 
-/* MOST READED */
+/* MOST READ */
 
 .mostReadedTitle {
   margin: 4vh 0 0 3vw;
@@ -624,6 +604,114 @@ main h3 {
 .greySpace {
   width: 66vw;
   height:5vh;
+}
+
+/* All articles of category */
+
+
+.AllArtBox_main{
+  z-index: 0;
+  margin-top: 8vh;
+  width: 100vw;
+  /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/brno\ new.jpg'); */
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/zelnak.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  background-size:cover;
+  height: 370vh; 
+}
+
+.allArtBox_greySpace {
+  z-index: 3;
+  position: relative;
+  top: 53vh;
+  margin: auto;
+  width: 66vw;
+  height: 3vh;
+  background-color: #f2efec;
+}
+
+.AllArtBox_container {
+  background-color: #f2efec;
+}
+
+.allArtBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0vh 3vw 0 3vw;
+  width: 60vw;
+  height: 290vh ;
+  background-color: #f2efec;
+}
+
+.allArtBox {
+  border-bottom: 0.2px dotted rgb(184, 183, 183);
+  width: 40%;
+  height: 18%;
+}
+
+.allArtBox Img {
+  width: 100%;
+  height: 60%;
+}
+
+.allArtBox_textPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 40%;
+}
+
+.allArtBox_textPart h5 {
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: #DA2128;
+  word-spacing: 0.3vw;
+}
+
+.allArtBox_textPart h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.allArtBox_textPart p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-size: 0.8vw ;
+  word-spacing: 0.3vw;
+}
+
+.allArtBox_categoryBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  width: 100%;
+}
+
+.allArtBox_categoryBoxLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 38%;
+}
+
+.allArtBox_categoryBox_btn {
+  width: 10vw;
+  color: white;
+  background-color: #DA2128;
+  border: none;
+  border-radius: 0px;
+  font-size: 0.7vw;
+}
+
+.allArtBox_categoryBox_btn:hover{
+  cursor: pointer;
 }
 
 /* FOOTER */
