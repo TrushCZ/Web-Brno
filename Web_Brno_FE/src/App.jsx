@@ -1,5 +1,5 @@
 import Homepage from './Components/Homepage'
-import AllArticlesOfCategory from './Components/AllArticlesOfCategory'
+import AllArticlesOfCategory from './Components/AllArticlesOfCategoryPage/AllArticlesOfCategorySection'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 const App = () => {

@@ -23,7 +23,7 @@ if ($connection) {
         rsort($response);
         header('Content-type: application/json; charset=UTF-8');
         // CORS policy
-        header("Access-Control-Allow-Origin: http://localhost:5174");
+        header("Access-Control-Allow-Origin: http://localhost:5173");
         echo json_encode($response, JSON_PRETTY_PRINT| JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8_SUBSTITUTE);
         
     } else {

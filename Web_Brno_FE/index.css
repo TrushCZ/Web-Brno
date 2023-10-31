@@ -16,7 +16,6 @@
 
 .categoryBox button {
   padding: 0.3vw;
-  margin-left: 0.4vw;
   width: 5vw;
   border: none;
   border-radius: 5px;
@@ -103,7 +102,7 @@ main {
   z-index: 0;
   margin-top: 8vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/Petrov2.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/brno\ new.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size:cover;
@@ -214,7 +213,7 @@ main h3 {
 }
 
 .newestArticles_smallBox h5 {
-  margin: 0 0.5vw 0 0.5vw;
+  margin-right: 0.5vw;
   font-size: 1.1vw;
   font-weight: 500;
   word-spacing: 0.3vw;
@@ -274,7 +273,7 @@ main h3 {
 }
 
 .interesting_upperBox_left_text h2 {
-  margin: 0 0.5vw 0 0.5vw;
+  margin-right: 0.5vw;
   font-size: 1.2vw;
   font-weight: 500;
   word-spacing: 0.3vw;
@@ -292,6 +291,7 @@ main h3 {
   -webkit-line-clamp: 5;
   overflow: hidden;
   text-overflow: ellipsis; 
+  margin-right: 0.5vw;
   font-size: 0.9vw ;
   word-spacing: 0.3vw;
 }
@@ -306,7 +306,7 @@ main h3 {
 
 .interesting_upperBox_right_img {
   width: 100%;
-  height: 65%;
+  height: 60%;
 }
 
 .interesting_upperBox_right_text {
@@ -314,12 +314,12 @@ main h3 {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 35%;
+  height: 40%;
 }
 
 .interesting_upperBox_right h5 {
   padding-top: 1vh;
-  margin: 0 0.5vw 0 0.5vw;
+  margin-right: 0.5vw;
   font-size: 1.1vw;
   font-weight: 500;
   word-spacing: 0.3vw;
@@ -339,19 +339,18 @@ main h3 {
   height: 35vh;
 }
 
-.interesting_lowerBox1, 
-.interesting_lowerBox2, 
-.interesting_lowerBox3 {
+.interesting_lowerBox1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 2vh;
   width: 31%;
   height: 100%;
 }
 
 .interesting_lowerBox_img {
   width: 100%;
-  height: 65%;
+  height: 60%;
 }
 
 .interesting_lowerBox_text {
@@ -359,11 +358,11 @@ main h3 {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 35%;
+  height: 40%;
 }
 
 .interesting_lowerBox_text h5 {
-  margin: 0 0.5vw 0 0.5vw;
+  margin-right: 0.5vw;
   font-size: 1.1vw;
   font-weight: 500;
   word-spacing: 0.3vw;
@@ -608,17 +607,15 @@ main h3 {
 
 /* All articles of category */
 
-
 .AllArtBox_main{
   z-index: 0;
   margin-top: 8vh;
   width: 100vw;
-  /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/brno\ new.jpg'); */
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/zelnak.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('src/img_general/brno\ new.jpg');
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-size:cover;
-  height: 370vh; 
+  height: 350vh; 
 }
 
 .allArtBox_greySpace {
@@ -628,36 +625,137 @@ main h3 {
   margin: auto;
   width: 66vw;
   height: 3vh;
-  background-color: #f2efec;
+  background-color: whitesmoke
 }
+
+/* All articles Upper box */
+
 
 .AllArtBox_container {
-  background-color: #f2efec;
+  z-index: 3;
+  position: relative;
+  top: 53vh;
+  margin: auto;
+  width: 66vw;
+  background-color: whitesmoke
 }
 
-.allArtBoxContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
+.allArtBoxUpperContainer {
   margin: 0vh 3vw 0 3vw;
   width: 60vw;
-  height: 290vh ;
-  background-color: #f2efec;
+  background-color: whitesmoke;
 }
 
-.allArtBox {
-  border-bottom: 0.2px dotted rgb(184, 183, 183);
-  width: 40%;
-  height: 18%;
+.allArtBoxUpperContainerUp {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 33vh;
 }
 
-.allArtBox Img {
+.allArtBoxUpperContainerUp__Left {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  height: 100%;
+}
+
+.allArtBoxUpperContainerUp__Left--Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32%;
+  height: 100%
+}
+
+.allArtBoxUpperContainerUp__Left--Text h2 {
+  margin-right: 0.5vw;
+  font-size: 1.4vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128;
+}
+
+.allArtBoxUpperContainerUp__Left--Text h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.allArtBoxUpperContainerUp__Left--Text p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  margin-right: 0.5vw;
+  font-size: 0.8vw ;
+  word-spacing: 0.3vw;
+}
+
+.allArtBoxUpperContainerUp__Left--Img {
+  border: 1px solid grey;
+  width: 68%;
+  height: 100%;
+}
+
+.allArtBoxUpperContainerUp__Right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31%;
+  height: 100%;
+}
+
+.allArtBoxUpperContainerUp__Right--Img {
+  width: 100%;
+  height: 65%;
+}
+
+.allArtBoxUpperContainerUp__Right--Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 35%;
+}
+
+.allArtBoxUpperContainerUp__Right--Text h5 {
+  padding-top: 1vh;
+  margin-right: 0.5vw;
+  font-size: 1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128
+}
+
+.allArtBoxUpperContainerUp__Right--Text h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.allArtBoxUpperContainerDown {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vh;
+  width: 60vw;
+  height: 33vh;
+}
+
+.allArtBoxUpperContainerDown__Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31%;
+  height: 100%;
+}
+
+.allArtBoxUpperContainerDown__Box__Img {
   width: 100%;
   height: 60%;
+  background-color: #aaa9a9;
 }
 
-.allArtBox_textPart {
+.allArtBoxUpperContainerDown__Box__Text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -665,53 +763,109 @@ main h3 {
   height: 40%;
 }
 
-.allArtBox_textPart h5 {
-  font-size: 1.1vw;
+.allArtBoxUpperContainerDown__Box__Text h5 {
+  margin-right: 0.5vw;
+  font-size: 1vw;
   font-weight: 500;
-  color: #DA2128;
   word-spacing: 0.3vw;
+  color:#DA2128
 }
 
-.allArtBox_textPart h5:hover {
+.allArtBoxUpperContainerDown__Box__Text h5:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.allArtBox_textPart p {
+/* All articles 'most read section' */
+
+.allArtBoxUpperContainer_mostRead {
+  margin: auto;
+  z-index: 3;
+  width: 66vw;
+  background-color: whitesmoke;
+}
+
+/* All article title */
+.allArtBox__title {
+  width: 66vw;
+  background-color: whitesmoke;
+}
+
+.allArtBox__title h2 {
+  margin: 3vh 0 3vh 3vw;
+  padding: 1vh 0 1vh 1vw;
+  width: 36%;
+  font-size: 1.8vw;
+  word-spacing: 0.3vw;
+  font-weight: 500;
+  color: white;
+  background-color: #DA2128;
+}
+
+/* All articles container bellow 'most read' */
+
+.allArtBoxLowerContainer1 {
+  width: 66vw;
+  margin: auto;
+  background-color: #f2efec;
+}
+
+.allArtBoxLowerContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0vh 3vw 0 3vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  width: 60vw;
+  height: 150vh ;
+  background-color: #f2efec;
+}
+
+.allArtBoxLowerContainer2__box {
+  padding-bottom: 2vh;
+  width: 37%;
+  height: 32%;
+  border-bottom: 0.2px dotted rgb(184, 183, 183);
+}
+
+.allArtBoxLowerContainer2__box__Img {
+  width: 100%;
+  height: 50%;
+  background-color: #aaa9a9;
+}
+
+.allArtBoxLowerContainer2__box__Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+
+.allArtBoxLowerContainer2__box__Text h5 {
+  margin-right: 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  word-spacing: 0.3vw;
+  color:#DA2128
+}
+
+.allArtBoxLowerContainer2__box__Text h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.allArtBoxLowerContainer2__box__Text p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis; 
+  margin-right: 0.5vw;
   font-size: 0.8vw ;
   word-spacing: 0.3vw;
-}
-
-.allArtBox_categoryBox {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2vh;
-  width: 100%;
-}
-
-.allArtBox_categoryBoxLeft {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 38%;
-}
-
-.allArtBox_categoryBox_btn {
-  width: 10vw;
-  color: white;
-  background-color: #DA2128;
-  border: none;
-  border-radius: 0px;
-  font-size: 0.7vw;
-}
-
-.allArtBox_categoryBox_btn:hover{
-  cursor: pointer;
 }
 
 /* FOOTER */
