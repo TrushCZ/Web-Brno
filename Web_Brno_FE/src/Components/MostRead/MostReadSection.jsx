@@ -35,11 +35,11 @@ const MostReadedSection = () => {
         <>
             <div className='mostReadedTitle'><h2>NEJČTENĚJŠÍ</h2></div>
             <div className='mostReaded_container'>
-                <MostReadArtical id={data[0].id} header={data[0].header} number={numbering[0]}/>
-                <MostReadArtical id={data[1].id} header={data[1].header} number={numbering[1]}/>
-                <MostReadArtical id={data[2].id} header={data[2].header} number={numbering[2]}/>
-                <MostReadArtical id={data[3].id} header={data[3].header} number={numbering[3]}/>
-                <MostReadArtical id={data[4].id} header={data[4].header} number={numbering[4]}/>
+                <MostReadArtical id={data[0].id} header={data[0].header} category={data[0].category} number={numbering[0]}/>
+                <MostReadArtical id={data[1].id} header={data[1].header} category={data[1].category} number={numbering[1]}/>
+                <MostReadArtical id={data[2].id} header={data[2].header} category={data[2].category} number={numbering[2]}/>
+                <MostReadArtical id={data[3].id} header={data[3].header} category={data[3].category} number={numbering[3]}/>
+                <MostReadArtical id={data[4].id} header={data[4].header} category={data[4].category} number={numbering[4]}/>
             </div>
         </>
 

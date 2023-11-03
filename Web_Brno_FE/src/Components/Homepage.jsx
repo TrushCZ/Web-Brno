@@ -1,5 +1,3 @@
-import Header from './Header'
-import Footer from './Footer'
 import FreeTimeSection from "./FreeTime/FreeTimeSection"
 import GastronomySection from "./Gastronomy/GastronomySection"
 import InspirationSection from "./Inspiration/InspirationSection"
@@ -13,7 +11,7 @@ const Homepage = () => {
 
     return <> 
 
-    <Header />
+   
 
     <main>
         <h3>S NÁMI VÁM VE ŠTATLU NIC NEUNIKNE</h3>
@@ -35,7 +33,6 @@ const Homepage = () => {
         </div>
     </main>
 
-    <Footer />
 
 </>
 

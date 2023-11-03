@@ -1,9 +1,32 @@
+import { Link } from "react-router-dom"
 
 const AllArticles_UpperBox_UpLeft = (props) => {
 
+    // Preparation of link
+
+    let category = props.category
+    let header = props.header
+    let id = props.id
+
+    let formedcategory
+
+    if (category == 'Gastronomie') {
+        formedcategory = 'gastronomie'
+    } else if (category == 'Volný čas') {
+        formedcategory = 'volnycas'
+    } else if (category == 'Inspirace') {
+        formedcategory = 'inspirace'
+    } else if (category == 'Sport') {
+        formedcategory = 'sport'
+    }
+    
+    let formedheader = header.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s/g, '-').replace(/,/g, "").replace(/\?\s*/g, '').toLowerCase()
+    
+    const link = `/${formedcategory}/${formedheader}/${id}`
+
     return  <div className='allArtBoxUpperContainerUp__Left'>
                 <div className='allArtBoxUpperContainerUp__Left--Text'>
-                    <h2>{props.header}</h2>
+                    <Link to={link} className='headerLink'><h2>{props.header}</h2></Link>
                     <p>{props.perex}</p>
                     <div className='categoryBox'>
                         <button>{props.category}</button>

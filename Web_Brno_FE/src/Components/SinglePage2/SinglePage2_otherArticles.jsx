@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
+    import { Link } from "react-router-dom"
+    const SinglePage2_otherArticles = (props) => {
 
-const InterestingArticleUpperboxLeft = (props) => {
 
     // Preparation of link
-
+    
     let category = props.category
     let header = props.header
     let id = props.id
@@ -23,21 +23,18 @@ const InterestingArticleUpperboxLeft = (props) => {
     let formedheader = header.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s/g, '-').replace(/,/g, "").replace(/\?\s*/g, '').toLowerCase()
     
     const link = `/${formedcategory}/${formedheader}/${id}`
-
-
-    return  <div className='interesting_upperBox_left'>
-                <div className='interesting_upperBox_left_text'>
-                    <Link to={link} className='headerLink' ><h2>{props.header}</h2></Link>
-                    
-                    
-                    <p>{props.perex}</p>
-                    <div className='categoryBox'>
+   
+    return  <div className='singlePageContainer__Left__recommendation_box_first'>
+                <img src={`http://www.cbp-exercises.test/BrnoToday_web%20/Web_Brno/Web_Brno_BE/img_load/${props.img}`} alt="" />
+                <div className ='singlePageContainer__Left__recommendation_box_first__textPart'>
+                    <Link to={link} className='headerLink'><h5>{props.header}</h5></Link>
+                    <div className='categoryBox categoryBoxRecommendation'>
                         <button>{props.category}</button>
                         <h6>{props.date}</h6>
                     </div>
                 </div>
-                <img className='interesting_upperBox_left_img'src={`http://www.cbp-exercises.test/BrnoToday_web%20/Web_Brno/Web_Brno_BE/img_load/${props.img}`} alt=""/>
             </div>
+            
 }
 
-export default InterestingArticleUpperboxLeft
+export default SinglePage2_otherArticles

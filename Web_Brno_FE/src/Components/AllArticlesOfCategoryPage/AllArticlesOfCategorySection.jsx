@@ -1,5 +1,3 @@
-import Header from '../Header'
-import Footer from '../Footer'
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -75,7 +73,7 @@ const AllArticlesOfCategory = () => {
 
     return <> 
 
-    <Header />
+    
 
     {
         !load
@@ -119,7 +117,7 @@ const AllArticlesOfCategory = () => {
     </main>
 
     }
-    <Footer />
+    
 </>
 
 }
