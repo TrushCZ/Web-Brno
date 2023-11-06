@@ -76,6 +76,18 @@ $result_final = mysqli_fetch_assoc($result);
        <textarea class='createArticle_Form_perex' name='perex' cols="30" rows="10"><?= htmlspecialchars((string)$result_final['Perex'])?></textarea><br>
 
        <h2>Text</h2>
+       <div class='btnsBox'>
+           <div class='btnP'>p</div>
+           <div class='btnH2'>h2</div>
+           <div class='btnH3'>h3</div>
+           <div class='btnLINK'>link</div>
+           <div class='btnI'>i</div>
+           <div class='btnB'>b</div>
+           <div class='btnUL'>ul</div>
+           <div class='btnOL'>ol</div>
+           <div class='btnLI'>li</div>
+           <div class='btnIMG'>img</div>
+       </div>
        <textarea class='createArticle_Form_text' name='text' cols="30" rows="10"><?= htmlspecialchars((string)$result_final['Text'])?></textarea><br>
        
        <h2>Hlavní obrázek</h2>
@@ -145,6 +157,7 @@ $result_final = mysqli_fetch_assoc($result);
       <?php require_once 'footer.php' ?>
 
     </body>
+       <script src="btnsBox.js"></script>  
     </html>
 
 

@@ -27,10 +27,19 @@
 .btnNext {
   position:absolute;
   right: -0.5vw;
+  height: 5vw;
 }
 
-.btnNext img{
-  width: 5vw;
+.btnBack {
+  position:absolute;
+  left: -0.5vw;
+  height: 5vw;
+  transform: rotate(180deg);
+}
+
+.btnNext:hover,
+.btnBack:hover {
+  cursor: pointer;
 }
 
 .btnNext_gastronomy {

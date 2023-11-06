@@ -57,6 +57,18 @@ if (isset($_SESSION['errors'])) {
        <textarea class='createArticle_Form_perex' name='perex' cols="" rows=""><?= htmlspecialchars((string)$article->perex)?></textarea><br>
 
        <h2>Text</h2>
+       <div class='btnsBox'>
+           <div class='btnP'>p</div>
+           <div class='btnH2'>h2</div>
+           <div class='btnH3'>h3</div>
+           <div class='btnLINK'>link</div>
+           <div class='btnI'>i</div>
+           <div class='btnB'>b</div>
+           <div class='btnUL'>ul</div>
+           <div class='btnOL'>ol</div>
+           <div class='btnLI'>li</div>
+           <div class='btnIMG'>img</div>
+       </div>
        <textarea class='createArticle_Form_text' name='text' cols="" rows=""><?= htmlspecialchars((string)$article->text)?></textarea><br>
 
        <h2>Hlavní obrázek</h2>
@@ -88,6 +100,7 @@ if (isset($_SESSION['errors'])) {
 
     
 </body>
+    <script src="btnsBox.js"></script>
 </html>
 
 
