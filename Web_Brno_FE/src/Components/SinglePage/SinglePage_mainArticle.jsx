@@ -1,4 +1,4 @@
-
+import ReactMarkdown from 'react-markdown'
 
 const SinglePage_mainArticle = (props) => {
 
@@ -12,7 +12,9 @@ const SinglePage_mainArticle = (props) => {
                 <img className='singlePageContainer__Left__upperBox__img' src={`http://www.cbp-exercises.test/BrnoToday_web%20/Web_Brno/Web_Brno_BE/img_load/${props.img}`} alt="" />
                 <p className='singlePageContainer__Left__upperBox__perex'>{props.perex}</p>
             </div>
-            <div className='singlePageContainer__Left__textBox'>{props.text}</div>
+            <div className='singlePageContainer__Left__textBox'>
+            <ReactMarkdown>{props.text}</ReactMarkdown>
+                </div>
     </>
 }
 

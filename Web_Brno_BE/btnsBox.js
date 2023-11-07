@@ -1,24 +1,4 @@
-// btn paragraph
-
-document.querySelector('.btnP').addEventListener('click', () => {
-    let textarea = document.querySelector('.createArticle_Form_text')
-  
-    let startSelection = textarea.selectionStart
-    let endSelection = textarea.selectionEnd
-  
-    let textBeforeSelection = textarea.value.substring(0, startSelection)
-    let selectedText = textarea.value.substring(startSelection, endSelection)
-    let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
-  
-    let newText = '<p>' + selectedText + '</p>'
-  
-    textarea.value = textBeforeSelection + newText + textAfterSelection
-  
-    textarea.selectionStart = startSelection
-    textarea.selectionEnd = startSelection + newText.length
-  })
-
-//   btn Header2
+// // btn header
 
 document.querySelector('.btnH2').addEventListener('click', () => {
     let textarea = document.querySelector('.createArticle_Form_text')
@@ -30,7 +10,7 @@ document.querySelector('.btnH2').addEventListener('click', () => {
     let selectedText = textarea.value.substring(startSelection, endSelection)
     let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
   
-    let newText = '<h2>' + selectedText + '</h2>'
+    let newText = '### ' + selectedText + ''
   
     textarea.value = textBeforeSelection + newText + textAfterSelection
   
@@ -38,7 +18,7 @@ document.querySelector('.btnH2').addEventListener('click', () => {
     textarea.selectionEnd = startSelection + newText.length
   })
 
-//   htn Header 3
+// //   htn Header 3
 
 document.querySelector('.btnH3').addEventListener('click', () => {
     let textarea = document.querySelector('.createArticle_Form_text')
@@ -50,7 +30,7 @@ document.querySelector('.btnH3').addEventListener('click', () => {
     let selectedText = textarea.value.substring(startSelection, endSelection)
     let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
   
-    let newText = '<h3>' + selectedText + '</h3>'
+    let newText = '#### ' + selectedText + ''
   
     textarea.value = textBeforeSelection + newText + textAfterSelection
   
@@ -58,7 +38,7 @@ document.querySelector('.btnH3').addEventListener('click', () => {
     textarea.selectionEnd = startSelection + newText.length
   })
 
-//   btn link
+// //   btn link
 
 document.querySelector('.btnLINK').addEventListener('click', () => {
     let textarea = document.querySelector('.createArticle_Form_text')
@@ -70,7 +50,7 @@ document.querySelector('.btnLINK').addEventListener('click', () => {
     let selectedText = textarea.value.substring(startSelection, endSelection)
     let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
   
-    let newText = '<a href="">' + selectedText + '</a>'
+    let newText = '[' + selectedText + '](adresa odkazu)'
   
     textarea.value = textBeforeSelection + newText + textAfterSelection
   
@@ -78,7 +58,7 @@ document.querySelector('.btnLINK').addEventListener('click', () => {
     textarea.selectionEnd = startSelection + newText.length
   })
 
-//   btn italics
+// //   btn italics
 
 document.querySelector('.btnI').addEventListener('click', () => {
     let textarea = document.querySelector('.createArticle_Form_text')
@@ -90,7 +70,7 @@ document.querySelector('.btnI').addEventListener('click', () => {
     let selectedText = textarea.value.substring(startSelection, endSelection)
     let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
   
-    let newText = '<em>' + selectedText + '</em>'
+    let newText = '*' + selectedText + '*'
   
     textarea.value = textBeforeSelection + newText + textAfterSelection
   
@@ -98,7 +78,7 @@ document.querySelector('.btnI').addEventListener('click', () => {
     textarea.selectionEnd = startSelection + newText.length
   })
 
-//   btn bold
+// //   btn bold
 
 document.querySelector('.btnB').addEventListener('click', () => {
     let textarea = document.querySelector('.createArticle_Form_text')
@@ -110,7 +90,7 @@ document.querySelector('.btnB').addEventListener('click', () => {
     let selectedText = textarea.value.substring(startSelection, endSelection)
     let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
   
-    let newText = '<b>' + selectedText + '</b>'
+    let newText = '**' + selectedText + '**'
   
     textarea.value = textBeforeSelection + newText + textAfterSelection
   
@@ -118,7 +98,7 @@ document.querySelector('.btnB').addEventListener('click', () => {
     textarea.selectionEnd = startSelection + newText.length
   })
 
-//  btn UL
+// //  btn UL
 
 document.querySelector('.btnUL').addEventListener('click', () => {
     let textarea = document.querySelector('.createArticle_Form_text')
@@ -130,7 +110,7 @@ document.querySelector('.btnUL').addEventListener('click', () => {
     let selectedText = textarea.value.substring(startSelection, endSelection)
     let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
   
-    let newText = '<ul>' + selectedText + '</ul>'
+    let newText = '- ' + selectedText + ''
   
     textarea.value = textBeforeSelection + newText + textAfterSelection
   
@@ -138,47 +118,7 @@ document.querySelector('.btnUL').addEventListener('click', () => {
     textarea.selectionEnd = startSelection + newText.length
   })
 
-//   btn OL
-
-document.querySelector('.btnOL').addEventListener('click', () => {
-    let textarea = document.querySelector('.createArticle_Form_text')
-  
-    let startSelection = textarea.selectionStart
-    let endSelection = textarea.selectionEnd
-  
-    let textBeforeSelection = textarea.value.substring(0, startSelection)
-    let selectedText = textarea.value.substring(startSelection, endSelection)
-    let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
-  
-    let newText = '<ol>' + selectedText + '</ol>'
-  
-    textarea.value = textBeforeSelection + newText + textAfterSelection
-  
-    textarea.selectionStart = startSelection
-    textarea.selectionEnd = startSelection + newText.length
-  })
-
-//   btn li
-
-document.querySelector('.btnLI').addEventListener('click', () => {
-    let textarea = document.querySelector('.createArticle_Form_text')
-  
-    let startSelection = textarea.selectionStart
-    let endSelection = textarea.selectionEnd
-  
-    let textBeforeSelection = textarea.value.substring(0, startSelection)
-    let selectedText = textarea.value.substring(startSelection, endSelection)
-    let textAfterSelection = textarea.value.substring(endSelection, textarea.value.length)
-  
-    let newText = '<li>' + selectedText + '</li>'
-  
-    textarea.value = textBeforeSelection + newText + textAfterSelection
-  
-    textarea.selectionStart = startSelection
-    textarea.selectionEnd = startSelection + newText.length
-  })
-
-//   btn img
+// //   btn img
 
     document.querySelector('.btnIMG').addEventListener('click', () => {
     let textarea = document.querySelector('.createArticle_Form_text')
@@ -188,14 +128,11 @@ document.querySelector('.btnLI').addEventListener('click', () => {
     let textBeforeCursor = textarea.value.substring(0, cursorPos)
     let textAfterCursor = textarea.value.substring(cursorPos, textarea.value.length)
   
-    textarea.value = textBeforeCursor + "<img src='' alt='' />" + textAfterCursor
+    textarea.value = textBeforeCursor + "![Popis obrázku](cesta/k/obrazku.jpg)" + textAfterCursor
   
     textarea.selectionStart = cursorPos + 1
     textarea.selectionEnd = cursorPos + 1
   })
-
-
-
 
 
 

@@ -161,13 +161,13 @@ main h3 {
 }
 
 .newestArticles_big_img {
-  width: 60%;
+  width: 49%;
   height: 90%;
   background-size: cover;
 }
 
 .newestArticles_big_textPart {
-  width: 38%;
+  width: 49%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -175,7 +175,7 @@ main h3 {
 }
 
 .newestArticles_big_textPart h2 {
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   font-weight: 500;
   word-spacing: 0.3vw;
   color:#DA2128;
@@ -966,7 +966,7 @@ footer p {
 
   .singlePageContainer__Left__upperBox h1{
     padding: 3vh 7% 0 7%;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     font-weight: 500;
     color:#DA2128;
     word-spacing: 0.3vw;
@@ -976,8 +976,8 @@ footer p {
     margin: 2vh 0 0 7%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 10vw;
+    align-content: center;
+    width: 12vw;
   }
 
   .singlePageContainer__Left__upperBox_categoryBox button {
@@ -999,7 +999,8 @@ footer p {
   .singlePageContainer__Left__upperBox__perex {
     padding: 2vh 7% 2vh 7%; 
     line-height: 1.7;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 500;
     word-spacing: 0.3vw;
   }
 
@@ -1010,10 +1011,33 @@ footer p {
     padding-bottom: 2vh;
   }
 
+  .singlePageContainer__Left__textBox h4 {
+    margin: 2vh 0 1.5vh 0;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color:#DA2128;
+    word-spacing: 0.3vw;
+  }
+
+  .singlePageContainer__Left__textBox h2 {
+    margin: 2vh 0 1.5vh 0;
+    font-size: 1.7vw;
+    font-weight: 400;
+    color:#DA2128;
+    word-spacing: 0.3vw;
+  }
+
+  .singlePageContainer__Left__textBox li {
+    margin-left: 1.3vw;
+    line-height: 1.7;
+    font-size: 1vw;
+    word-spacing: 0.3vw;
+  }
+
   .singlePageContainer__Left__textBox p {
     margin-top: 2vh;
     line-height: 1.7;
-    font-size: 1.1vw;
+    font-size: 1vw;
     word-spacing: 0.3vw;
   }
 
@@ -1080,6 +1104,23 @@ footer p {
   .singlePageContainer__Right {
     width: 30%;
     height: 100%;
+  }
+
+  .singlePageContainer__Right h2{
+  padding: 1vh 0 1vh 1vw;
+  margin: 3vh 12% 2vh 12%;
+  width: 76%;
+  font-size: 1.3vw;
+  font-weight: 400;
+  word-spacing: 0.3vw;
+  border-bottom: 0.2px dotted rgb(184, 183, 183);
+  }
+
+  .singlePageContainer__Right__logo {
+    border: 1px solid black;
+    margin: auto;
+    width: 76%;
+    height: 150vh;
   }
 
 

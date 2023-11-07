@@ -47,6 +47,10 @@ const SinglePage = () => {
                 </div>
             </div>
             <div className='singlePageContainer__Right'>
+                <h2>DOPORUČUJEME</h2>
+                <div className='singlePageContainer__Right__logo'>
+                    
+                </div>
                 
 
             </div>
